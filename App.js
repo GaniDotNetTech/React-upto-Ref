@@ -33,6 +33,7 @@ class App extends Component {
   componentDidUpdate(p,q,r){
     console.log('componentDidUpdate in index.js');
   }
+  //click events
       deleteClickedHandler =(index) =>{
           console.log('delete');
         const personObject = [...this.state.persons];
@@ -64,7 +65,7 @@ class App extends Component {
         this.setState({showEmpolyee:!shwoPerson});
         console.log(this.state.showEmpolyee);
       }
-
+//click events end
   render() {
     let person = '';
     let hello = '';
