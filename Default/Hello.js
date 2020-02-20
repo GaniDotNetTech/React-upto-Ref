@@ -6,7 +6,7 @@ const hello = props =>{
   useEffect(()=>{
     //alert("I'm excuted");
     //accessing ref
-    buttonref.current.click();
+    //buttonref.current.click();
     console.log(props.name)
  return()=>{
    console.log('return invokes')
@@ -15,8 +15,10 @@ const hello = props =>{
   );
   return(
     <div>
+    <br/>
     <button ref={buttonref} onClick = {props.buttonClicked}>{props.name}</button>
-        
+        <br/><br/>
+        <button onClick = {} >Login</button>
     </div>
     );
 }
